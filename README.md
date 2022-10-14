@@ -1,9 +1,83 @@
-# socket_chat
+# Tor Chat
 
-Консольный чат на сокетах. Для создания консольного интерфейса клиента используется библиотека <b>curses</b>. 
 
-Код сервера и клиента хранятся в chat_server.py и chat_client.py соответственно. Общие настройки, такие как host и port вынесены в отдельный файл chat_settings.py
 
-Для начала запускаем сервер <b>python3 chat_server.py</b>
 
-Затем в отдельных терминалах клиентов <b>python3 chat_client.py</b>
+Encrypted Chat (python) Curses for Terminal !!
+
+
+
+---
+
+>Easy to use 
+
+
+
+>Inbuilt Encryption
+
+
+
+>TCP socket
+
+
+
+>Terminal UI
+
+
+
+## installation
+
+```
+
+git clone https://github.com/security-softwares/TorChat/
+
+
+
+cd TorChat
+
+
+
+
+
+
+
+```
+
+### for server setting
+
+host=localhost or (default)
+
+port = any that you provided in input of torchat
+
+### For joining server 
+
+- >tor_chat -c
+
+
+host= hostname (.onion address)
+
+
+port = 80 ``` listning address of tor ```
+
+
+
+---
+
+Links subscribe for more
+
+[Subscribe our YouTube channel link](https://www.youtube.com/channel/UCqVu524dUZOxscEMiou7Iew)
+
+
+
+
+
+![](https://user-images.githubusercontent.com/61265099/78818286-19743180-79dd-11ea-84c5-f629f891dd4b.png)
+
+
+
+![](https://www.codewars.com/users/Hackers%20Tech/badges/large)
+
+
+
+
+
