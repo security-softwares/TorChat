@@ -4,7 +4,7 @@ echo "run with sudo"
 exit
 fi
 echo -e "setting up"
-
+chmod u+x tor_chat.sh
 cd ..
 cp -r TorChat /etc/
 
