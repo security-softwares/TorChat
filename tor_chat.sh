@@ -12,8 +12,12 @@ exit
 elif [ "$1" == "-s" ]
 
 then
-#echo "" >> /
-#cat
+
+read -p "enter port " port
+echo -e "HiddenServiceDir /var/lib/tor/hidden_service/ \n HiddenServicePort 80 127.0.0.1:$port" >> /etc/tor/torrc
+echo "link to join-;"
+cat /var/lib/tor/hidden_service/hostname
+echo -e "server should be host on port 8080 and join port 80\n"
 torsocks python3  /etc/TorChat/chat_server.py
 
 elif [ "$1" == "-c" ]
