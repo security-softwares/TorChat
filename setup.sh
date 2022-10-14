@@ -3,10 +3,10 @@ then
 echo "run with sudo"
 exit
 fi
-echo -e "setting up\n"
+echo -e "setting up"
 
 cd ..
-cp -r TorChat /etc
+cp -r TorChat /etc/
 
 
 cd TorChat
