@@ -1,2 +1,9 @@
-# TorChat
-Encrypted Tor chat for terminal ui Linux 
+# socket_chat
+
+Консольный чат на сокетах. Для создания консольного интерфейса клиента используется библиотека <b>curses</b>. 
+
+Код сервера и клиента хранятся в chat_server.py и chat_client.py соответственно. Общие настройки, такие как host и port вынесены в отдельный файл chat_settings.py
+
+Для начала запускаем сервер <b>python3 chat_server.py</b>
+
+Затем в отдельных терминалах клиентов <b>python3 chat_client.py</b>
