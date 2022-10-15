@@ -24,7 +24,18 @@ torsocks python3 /etc/TorChat/chat_server.py
 elif [ "$1" == "-c" ]
 then 
 torsocks python3 /etc/TorChat/chat_client.py
+
+elif [ "$1" == "-u" ] || [ "$1" == "--uninstall" ]
+then
+echo "uninstalled"
+rm -rf /usr/local/bin/tor_chat
+rm -rf /usr/bin/tor_chat
+rm -rf /usr/local/bin/TorChat
+rm -rf /usr/bin/TorChat
+rm -rf /etc/TorChat
+rm -rf /etc/tor_chat
 else
 echo "\033[1;31mERROR"
 exit
+
 fi
