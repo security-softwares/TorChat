@@ -83,7 +83,7 @@ class ChatInterface:
         
         #all records in view block
         self.all_records = []
-        self.title = "Enter your name:                  made by hacker X "
+        self.title = "Enter your name:                  made by security softwares"
         
         self.all_records.append((self.title, 3))
         
