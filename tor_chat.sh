@@ -2,7 +2,7 @@
 if [ -z "$1" ]
 then
 echo -e "\033[1;32m Tor_Chat is encrypted chat over Tor service \n for more visit :\033[0m https://github.com/security-softwares"
-echo -e "\033[1;33musage: 	sudo tor_chat -s : For server side \n	sudo tor_chat -c : For client side \033[0m"
+echo -e "\033[1;33musage: 	sudo tor_chat -s : For server side \n	sudo tor_chat -c : For client side \033[0m \n 	tor_chat -u: uninstall"
 exit
 fi
 
@@ -19,21 +19,17 @@ echo -e "HiddenServiceDir /var/lib/tor/hidden_service/ \n HiddenServicePort 80 1
 echo "link to join-:"
 cat /var/lib/tor/hidden_service/hostname
 echo -e "server should be host on port 8080 and join port 80\n"
-torsocks python3 /etc/TorChat/chat_server.py
+torsocks python3 chat_server.py
 
 elif [ "$1" == "-c" ]
 then 
-torsocks python3 /etc/TorChat/chat_client.py
+torsocks python3 chat_client.py
 
 elif [ "$1" == "-u" ] || [ "$1" == "--uninstall" ]
 then
 echo "uninstalled"
-rm -rf /usr/local/bin/tor_chat
-rm -rf /usr/bin/tor_chat
-rm -rf /usr/local/bin/TorChat
-rm -rf /usr/bin/TorChat
-rm -rf /etc/TorChat
-rm -rf /etc/tor_chat
+cd ..
+rm -rf TorChat
 else
 echo "\033[1;31mERROR"
 exit
