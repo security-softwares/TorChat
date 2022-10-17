@@ -39,6 +39,7 @@ Encrypted Chat (python) Curses for Terminal !!
 git clone https://github.com/security-softwares/TorChat/
 
 cd TorChat
+bash tor_chat.sh
 ```
 
 
@@ -49,14 +50,14 @@ cd TorChat
 
 
 ### for server setting
-
+- >sudo bash tor_chat -s
 host=localhost or (default)
 
 port = any that you provided in input of torchat
 
 ### For joining server 
 
-- >tor_chat -c
+- >bash tor_chat -c
 
 
 host= hostname (.onion address)
@@ -72,8 +73,9 @@ Links subscribe for more
 [Subscribe our YouTube channel link](https://www.youtube.com/channel/UCqVu524dUZOxscEMiou7Iew)
 
 
+## for uninstall
 
-
+>bash tor_chat -s
 
 ![](https://user-images.githubusercontent.com/61265099/78818286-19743180-79dd-11ea-84c5-f629f891dd4b.png)
 
