@@ -1,5 +1,6 @@
 
-import socket,curses
+import socket,curses,os
+os.system("service tor start")
 import threading,binascii
 HOST=input('enter Host (default : 127.0.0.1) ')
 if HOST=='' or HOST.isspace==True:
