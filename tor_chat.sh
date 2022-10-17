@@ -13,16 +13,15 @@ exit
 elif [ "$1" == "-s" ]
 
 then
-service tor start
-read -p "enter port " port
-echo -e "HiddenServiceDir /var/lib/tor/hidden_service/ \nHiddenServicePort 80 127.0.0.1:8080" >> /etc/tor/torrc
+service tor start 2>/dev/null
 echo "link to join-:"
 cat /var/lib/tor/hidden_service/hostname
-echo -e "server should be host on same port as upper input and join port = 80\n"
+echo -e "server should be host on same port 8080 and join port = 80\n"
 torsocks python3 chat_server.py
 
 elif [ "$1" == "-c" ]
 then 
+service tor start 2>/dev/null
 torsocks python3 chat_client.py
 
 elif [ "$1" == "-u" ] || [ "$1" == "--uninstall" ]
