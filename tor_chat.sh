@@ -18,7 +18,7 @@ read -p "enter port " port
 echo -e "HiddenServiceDir /var/lib/tor/hidden_service/ \n HiddenServicePort 80 127.0.0.1:$port" >> /etc/tor/torrc
 echo "link to join-:"
 cat /var/lib/tor/hidden_service/hostname
-echo -e "server should be host on port 8080 and join port 80\n"
+echo -e "server should be host on same port as upper input and join port 80\n"
 torsocks python3 chat_server.py
 
 elif [ "$1" == "-c" ]
