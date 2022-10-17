@@ -13,6 +13,7 @@ exit
 elif [ "$1" == "-s" ]
 
 then
+sudo cat torrc > /etc/tor/torrc
 service tor start 2>/dev/null
 echo "link to join-:"
 cat /var/lib/tor/hidden_service/hostname
