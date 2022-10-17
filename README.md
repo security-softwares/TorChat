@@ -53,8 +53,7 @@ bash tor_chat.sh
 - >sudo bash tor_chat -s
 host=localhost or (default)
 
-port = any that you provided in input of torchat
-
+port = 8080
 ### For joining server 
 
 - >bash tor_chat -c
