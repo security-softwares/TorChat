@@ -33,5 +33,8 @@ rm -rf TorChat
 else
 echo "\033[1;31mERROR"
 exit
-
+elif [ "$1" == "-r" ]
+then 
+echo "reversed"
+cat Normal_Torrc >/etc/tor/torrc
 fi
